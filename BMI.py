@@ -1,4 +1,5 @@
 # 請使用者輸入身高(cm)與體重(kg)，計算並印出 BMI 值與體位判斷
+# github 編輯測試
 height = float(input("請輸入身高(cm): "))
 weight = float(input("請輸入體重(kg): "))
 bmi = weight / (height / 100) ** 2
