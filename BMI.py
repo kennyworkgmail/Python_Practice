@@ -2,7 +2,7 @@
 # 雲端編輯2
 # 本地端編輯3
 # 雲端編輯3
-height = float(input("請輸入身高(cm): "))
+height = float(input("請輸入身高(cm): "))123
 weight = float(input("請輸入體重(kg): "))
 bmi = weight / (height / 100) ** 2
 if bmi < 18.5:
