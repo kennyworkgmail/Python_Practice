@@ -12,3 +12,4 @@ else:
     print("體位：肥胖")
 print("BMI 值：{:.2f}".format(bmi))
 # 本地端編輯1
+# 本地端編輯2
