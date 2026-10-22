@@ -1,0 +1,67 @@
+1. 一律使用 Tab（\t）縮排
+2. "()"內條件不換行
+4. function 定義的"("後和")"前要加空格" "
+5. "{"換行後不空行
+3. 非必要(區分不同邏輯區塊)不空行，若有空行要保持tab縮排對齊
+6. 同區塊內變數賦值以空格補齊":="
+7. Map / Array / Object / Function input參數，以單行定義為原則，超過50字元再視情況換行，換行前的那一行加上一個" "空格，並且換行的那一行的內容最前面不要有空格，且排版要比換行前的多加一個tab。
+8. ","後一律加空格" "
+
+
+
+# Code Style Rules
+
+## 1. General Formatting
+
+1. **Indentation**: Always use a single Tab (`\t`) for indentation. Do not use spaces for indentation.
+2. **Condition Expressions**: Keep conditions inside `()` on a single line. Do not wrap conditions across multiple lines.
+3. **Line Breaks**: Place the opening `{` and the closing `}` according to the syntax conventions of the target language.
+4. **Opening Braces**: After an opening `{` followed by a line break, do not insert an empty line. Start the block content on the next line.
+5. **Blank Lines**: Avoid unnecessary blank lines. Use blank lines only to separate distinct logical sections. If a blank line is needed within an indented block, preserve the surrounding indentation alignment.
+6. **Comma Spacing**: Always insert exactly one space after a comma (`,`).
+
+## 2. Function Definitions
+
+1. Add one space immediately after the opening `(` and immediately before the closing `)` in function definitions.
+2. Keep function parameters on a single line by default.
+3. If a parameter list exceeds 50 characters, consider breaking it into multiple lines when necessary.
+4. When a parameter list wraps:
+	- Append one space to the end of the preceding line.
+	- Start the continuation line with one additional Tab relative to the preceding line.
+	- Do not add spaces before the first character of the continuation line, except for the required Tab indentation.
+5. Keep conditions inside `()` on a single line, even when they exceed 50 characters.
+
+## 3. Map / Array / Object / Function Arguments
+
+1. Define Maps, Arrays, Objects, and Function arguments on a single line by default.
+2. If a definition exceeds 50 characters, consider wrapping it when doing so improves readability.
+3. When wrapping a definition:
+	- Append one space to the end of the preceding line.
+	- Indent the continuation line with one additional Tab relative to the preceding line.
+	- Do not insert spaces before the first character of the continuation line, except for the required Tab indentation.
+4. Apply these rules consistently to nested structures and function calls.
+5. Keep commas followed by exactly one space.
+
+## 4. Variable Assignment Alignment
+
+1. Within the same logical block, align variable assignment operators vertically.
+2. Add spaces before the assignment operator as needed to align it with other assignments in the same block.
+3. Use the assignment operator required by the target programming language. For example, use `=` in PHP, JavaScript, and Python; use `:=` only in languages that support it, such as Go.
+4. Do not change the meaning of an expression merely to achieve visual alignment.
+5. Only align assignments within the same logical block. Do not align unrelated assignments across different blocks.
+
+## 5. Code Modification and Refactoring
+
+1. Preserve the existing program logic unless the task explicitly requires changing it.
+2. Do not introduce unnecessary blank lines, indentation changes, or formatting inconsistencies.
+3. When modifying existing code, apply these rules consistently to the modified section.
+4. When creating new code, follow these rules from the beginning.
+5. Do not sacrifice syntactic correctness or language conventions to satisfy a formatting rule that is incompatible with the target language.
+
+## 6. AI Agent Compliance
+
+1. Treat this document as the default formatting standard for all code generated or modified in this project.
+2. Before completing a coding task, review the modified code against every applicable rule in this document.
+3. Correct formatting violations before presenting the final result.
+4. If a rule conflicts with the target language's syntax, formatter, or required project conventions, preserve correctness and explicitly explain the conflict.
+5. Do not reformat unrelated files or code sections unless explicitly requested.
