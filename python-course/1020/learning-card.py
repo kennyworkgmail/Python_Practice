@@ -85,10 +85,10 @@ def accessInput():
     
     inputError = False
     output = StudyPlan()
-    # 讓使用者輸入姓名
-    output.name = input("請輸入姓名：")
-    # 讓使用者輸入學習目標
-    output.learning_objectives = input("本期最想完成的作品：")
+    # 讓使用者輸入姓名，並去除前後空白
+    output.name = input("請輸入姓名：").strip()
+    # 讓使用者輸入學習目標，並去除前後空白
+    output.learning_objectives = input("本期最想完成的作品：").strip()
     # 讓使用者輸入每天學習幾小時，並檢查輸入是否為數字
     while True:
         try:
